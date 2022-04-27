@@ -1,0 +1,37 @@
+<html> 
+<head> 
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script> 
+<script type="text/javascript"> 
+google.charts.load('current', {'packages':['corechart']}); 
+google.charts.setOnLoadCallback(drawChart); 
+function drawChart() { 
+var data = google.visualization.arrayToDataTable([ 
+['Execution Time (s)', 'VIRT (Max)', 'VIRT', 'RES (Max)', 'RES', 'SHR', 'MEM (Free)', 'TMEM (Max)'], 
+[0,0.920444,0.920444,0.029537,0.029537,0.000000,182.086000,0.029537],
+[10,3.078000,3.078000,0.093166,0.093166,0.000000,182.058000,0.093166],
+[20,5.430350,5.430350,0.174515,0.174515,0.000000,180.208000,0.174515],
+]); 
+var options = {  
+title : 'Memory Utilization (RES and SHR are stacked, to show total physical memory, MEM)', 
+vAxis: {title: 'GB'}, 
+hAxis: {title: 'Time (s)'}, 
+isStacked: true, 
+series: { 0: {type: 'line', color:'red', lineDashStyle: [1, 1]}, 1: {type: 'line', color:'orange',lineWidth:3, lineDashStyle: [1, 1]},  2: {type: 'line', color:'green', lineDashStyle: [1, 1]}, 5: {type: 'line',lineWidth:5}, 6: {type: 'line', color:'aqua'}},
+     
+width: 1024,  
+height: 800,  
+axes: {  
+x: {  
+0: {side: 'top'}  
+}  
+},  
+ };  
+ var chart = new google.visualization.AreaChart(document.getElementById('chart_div')); 
+chart.draw(data, options);  
+}  
+</script>  
+</head>  
+<body>  
+  <div id="chart_div"></div>  
+</body>  
+</html>  
