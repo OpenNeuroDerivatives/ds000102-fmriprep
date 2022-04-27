@@ -1,1 +1,1 @@
-../../../../.git/annex/objects/px/v3/MD5E-s4808--bebcecaccfaa120058fce1482c9777bd.cmd/MD5E-s4808--bebcecaccfaa120058fce1482c9777bd.cmd
+/annex/objects/MD5E-s4808--bebcecaccfaa120058fce1482c9777bd.cmd
