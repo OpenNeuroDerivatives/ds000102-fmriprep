@@ -1,4 +1,0 @@
-TIMESTAMP        scratch3-RQ      scratch3-RD      scratch3-WR      
-1651094368 0 0 0
-1651094378 0 0 0
-1651094388 0 0 0

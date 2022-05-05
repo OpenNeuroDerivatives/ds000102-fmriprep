@@ -1,4 +1,0 @@
-      time tx_packets rx_packets        tx_bytes        rx_bytes  tx_errors tx_dropped rx_frame_errors rx_crc_errors
-1651094367          8          9             720             836          0          0          0          0
-1651094377         48         89           20152           12556          0          0          0          0
-1651094388         11         25            1179            2166          0          0          0          0
