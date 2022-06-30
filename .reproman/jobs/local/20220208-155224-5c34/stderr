@@ -1,1 +1,18 @@
-../../../../.git/annex/objects/5k/vk/MD5E-s957--cc82235e8f3e6c2ebe99c09cc8fae16a/MD5E-s957--cc82235e8f3e6c2ebe99c09cc8fae16a
+Warning: Permanently added 'c177-194' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c178-141' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c179-021' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c180-083' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c180-131' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c180-162' (ED25519) to the list of known hosts.
+Warning: Permanently added 'c181-013' (ED25519) to the list of known hosts.
+WARNING (02/10/22 01:09:26): LAUNCHER_WORKDIR variable not set. Using current directory.
+using /tmp/launcher.4032107.hostlist.QWC85dBN to get hosts
+starting job on c177-194
+starting job on c178-141
+starting job on c179-021
+starting job on c180-083
+starting job on c180-131
+starting job on c180-162
+starting job on c181-013
+slurmstepd: error: *** JOB 4032107 ON c177-194 CANCELLED AT 2022-02-10T07:01:10 ***
+Terminated

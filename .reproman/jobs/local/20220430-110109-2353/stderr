@@ -1,1 +1,5 @@
-../../../../.git/annex/objects/Q0/mj/MD5E-s209--1d39482121d7e73b779a7e88f1004fb8/MD5E-s209--1d39482121d7e73b779a7e88f1004fb8
+WARNING (04/30/22 11:01:25): LAUNCHER_WORKDIR variable not set. Using current directory.
+using /tmp/launcher.4291726.hostlist.SqXbvH2N to get hosts
+starting job on c210-016
+starting job on c210-017
+Terminated
