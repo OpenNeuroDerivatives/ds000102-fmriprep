@@ -1,0 +1,59 @@
+It is highly recommended to configure Git before using DataLad. Set both 'user.name' and 'user.email' configuration variables.
+It is highly recommended to configure Git before using DataLad. Set both 'user.name' and 'user.email' configuration variables.
+[INFO] Cloning dataset to Dataset(/scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds000102-fmriprep/sourcedata/templateflow) 
+[INFO] Attempting to clone from https://github.com/templateflow/templateflow.git to /scratch1/03201/jbwexler/openneuro_derivatives/derivatives/fmriprep/ds000102-fmriprep/sourcedata/templateflow 
+[INFO] Start enumerating objects 
+[INFO] Start counting objects 
+[INFO] Start receiving objects 
+[INFO] Start resolving deltas 
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/fmriprep/.cache/datalad/sockets'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/conda/bin/fmriprep", line 5, in <module>
+    from fmriprep.cli.run import main
+  File "/opt/conda/lib/python3.8/site-packages/fmriprep/cli/run.py", line 25, in <module>
+    from .. import config
+  File "/opt/conda/lib/python3.8/site-packages/fmriprep/config.py", line 116, in <module>
+    from templateflow import __version__ as _tf_ver
+  File "/opt/conda/lib/python3.8/site-packages/templateflow/__init__.py", line 19, in <module>
+    from . import api
+  File "/opt/conda/lib/python3.8/site-packages/templateflow/api.py", line 7, in <module>
+    from .conf import TF_LAYOUT, TF_S3_ROOT, TF_USE_DATALAD, requires_layout
+  File "/opt/conda/lib/python3.8/site-packages/templateflow/conf/__init__.py", line 53, in <module>
+    install(path=str(TF_HOME), source=TF_GITHUB_SOURCE, recursive=True)
+  File "/opt/conda/lib/python3.8/site-packages/datalad/interface/utils.py", line 484, in eval_func
+    return return_func(generator_func)(*args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/datalad/interface/utils.py", line 476, in return_func
+    results = list(results)
+  File "/opt/conda/lib/python3.8/site-packages/datalad/interface/utils.py", line 396, in generator_func
+    for r in _process_results(
+  File "/opt/conda/lib/python3.8/site-packages/datalad/interface/utils.py", line 579, in _process_results
+    for res in results:
+  File "/opt/conda/lib/python3.8/site-packages/datalad/distribution/install.py", line 365, in __call__
+    for r in res:
+  File "/opt/conda/lib/python3.8/site-packages/datalad/interface/utils.py", line 396, in generator_func
+    for r in _process_results(
+  File "/opt/conda/lib/python3.8/site-packages/datalad/interface/utils.py", line 579, in _process_results
+    for res in results:
+  File "/opt/conda/lib/python3.8/site-packages/datalad/core/distributed/clone.py", line 320, in __call__
+    yield from clone_dataset(
+  File "/opt/conda/lib/python3.8/site-packages/datalad/core/distributed/clone.py", line 589, in clone_dataset
+    GitRepo.clone(
+  File "/opt/conda/lib/python3.8/site-packages/datalad/support/gitrepo.py", line 1029, in clone
+    gr = cls(path, *args, **kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/datalad/dataset/repo.py", line 152, in __call__
+    instance = type.__call__(cls, *new_args, **new_kwargs)
+  File "/opt/conda/lib/python3.8/site-packages/datalad/support/gitrepo.py", line 879, in __init__
+    ssh_manager.ensure_initialized()
+  File "/opt/conda/lib/python3.8/site-packages/datalad/support/sshconnector.py", line 707, in ensure_initialized
+    self._socket_dir.mkdir(exist_ok=True, parents=True)
+  File "/opt/conda/lib/python3.8/pathlib.py", line 1292, in mkdir
+    self.parent.mkdir(parents=True, exist_ok=True)
+  File "/opt/conda/lib/python3.8/pathlib.py", line 1288, in mkdir
+    self._accessor.mkdir(self, mode)
+OSError: [Errno 30] Read-only file system: '/home/fmriprep/.cache/datalad'
